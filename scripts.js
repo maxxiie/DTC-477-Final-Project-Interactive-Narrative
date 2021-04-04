@@ -77,7 +77,7 @@ function start(startpoint){
   
   //creating the buttons
   for (x = 0; x < buttonlength; x++){
-      document.getElementById("buttons").innerHTML += "<button>" + "Option: " + nar.point1.buttons + "</button>"
+      document.getElementById("buttons").innerHTML += "<button>" + "Option: " + nar.point1.buttons[x].option + "</button>"
     
     
     
