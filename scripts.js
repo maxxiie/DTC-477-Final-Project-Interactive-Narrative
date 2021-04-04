@@ -41,16 +41,16 @@ var nar = {
   
     //You went alone
     alone: {
-      text: "im too tired to write this rn tbh",
+      text: "You shiver at the thought of going alone to the woods, but that is what you've decided to do, even though it's Taro's friend you're visiting in the first place. Oh well. It'll do. You're too shy to ask your best friends Taro and Yuuji to come with you- even though you're sure they'd agree. You don't want to bother them, after all. They're busy busy bees!",
       
     //option1
     buttons: [{
-    option: "Thank your friends",
+    option: "Talone",
     optionid: "thankfriends"
   },
     //option2
     {
-    option: "Give Taro a big hug, thanking the wrong person",
+    option: "tawon",
     optionid: "tarohug"
   }]
   
@@ -84,7 +84,9 @@ function ObjectLength( object ) {
 var varid = "";
 var classn = "";
 
-
+function countthru(number){
+  
+}
 
 //letucce start the start function!
 function start(startpoint){
@@ -105,24 +107,55 @@ function start(startpoint){
     
     //change class of button
         document.getElementById(currentid).className = currentclass;
+
+    
     
     //onclick
-    
-    //if u click ask friends
+    //if u click current
     if (document.getElementById(currentid).className == "askfriends"){
       document.getElementById(currentid).onclick = function(){
         document.getElementById("storytext").innerHTML = nar.askfriends.text;
+        
+        //set buttons again
+        for( z = 0 ; z < 5; z++){
+          var currentidz = String('opt') + ((z+1));
+          document.getElementById(currentidz).innerHTML = "";
+        }
+        
+        //for amount of current buttons
+          for (y = 0; y < ObjectLength(nar.askfriends.buttons); y++){
+            var currentidy= String('opt'+(y+1));
+            var currentclassy = String(nar.askfriends.buttons[y].optionid);
+            
+          //change text of button
+          document.getElementById(currentidy).innerHTML =                             nar.askfriends.buttons[y].option;
+          }
       }
+      
+      
     }//emd of ask friends start
     else if (document.getElementById(currentid).className == "alone"){
-        document.getElementById(currentid).onclick = function(){
+      document.getElementById(currentid).onclick = function(){
         document.getElementById("storytext").innerHTML = nar.alone.text;
+        
+        //set buttons again
+        for( z = 0 ; z < 5; z++){
+          var currentidz = String('opt') + ((z+1));
+          document.getElementById(currentidz).innerHTML = "";
         }
-      };
-
+        
+        //for amount of current buttons
+          for (y = 0; y < ObjectLength(nar.alone.buttons); y++){
+            var currentidy= String('opt'+(y+1));
+            var currentclassy = String(nar.alone.buttons[y].optionid);
+            
+          //change text of button
+          document.getElementById(currentidy).innerHTML =                             nar.alone.buttons[y].option;
+          }
+      }
       
       
-
+      }
 } //end of button creation
 console.log("Starting Button HTML ----> " + document.getElementById("buttons").innerHTML);
 //end of starter function
