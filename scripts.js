@@ -57,7 +57,7 @@ function ObjectLength( object ) {
         }
     }
     return length;
-};
+}
 
 //where are we at
 var varid = "";
@@ -77,14 +77,18 @@ function start(startpoint){
   
   //creating the buttons
   for (x = 0; x < buttonlength; x++){
-      document.getElementById("buttons").innerHTML += "<button>" + "Option: " + nar.point1.buttons[x].option + "</button>"
-    
-    
-    
-  }
-  //end of starter function
-  
-
+    currentid= "opt"+(x+1);
+      document.getElementById("buttons").innerHTML += "<button id= " + currentid +" onclick = optionclick(" + currentid + ")" + ">" + "Option: " + nar.point1.buttons[x].option + "</button>"  
+} //end of button creation
+ 
+console.log("Starting Button HTML ----> " + document.getElementById("buttons").innerHTML);
   
   return varid;
+}
+ //end of starter function
+
+
+//clicking on new buttons
+function optionclick(optid){
+  document.getElementById("buttons").innerHTML = "OPTIONCLIICKK";
 }
