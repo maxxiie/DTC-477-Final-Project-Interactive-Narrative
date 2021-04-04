@@ -21,6 +21,14 @@ body {
   padding-bottom: 15px;
 }
 
+#storyimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  border-radius: 20px;
+}
+
 a {
   color: yellow;
   cursor: url("https://cdn.custom-cursor.com/db/7131/32/meme-malow-cat-pointer.png"), url("https://cdn.custom-cursor.com/db/7131/32/meme-malow-cat-pointer.png"), default;
@@ -110,17 +118,6 @@ button:hover{
     margin: 0px
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
