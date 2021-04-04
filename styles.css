@@ -54,7 +54,7 @@ a {
   background-color: rgba(110, 163, 50, 0.39);
    -webkit-flex: 1;
    -ms-flex: 1;
-   flex: 1;
+   flex: 0.4;
 }
 
 button {
@@ -110,6 +110,31 @@ button:hover{
     margin: 0px
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** SPECIAL TEXT FROM DEVSNAP, SOME EDITS BY ME **/
