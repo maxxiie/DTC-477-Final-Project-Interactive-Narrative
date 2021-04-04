@@ -6,24 +6,42 @@ var nar = {
     
     //option1
     buttons: [{
-    option: "Ask your friends to come with you!",
+    option: "Ask your friends to come with you",
     optionid: "askfriends"
   },
     //option2
     {
-    option: "Go alone.... :(",
+    option: "Proclaim in fear that you will go alone",
     optionid: "alone"
   },
      //option3
     {
-    option: "Fall onto the floor and beg your friends to come with you, sobbing dramatically",
+    option: "Fall onto the floor and beg your friends to come with you",
     optionid: "askfriends"
   }]
   },
   
   //You took your friends
     askfriends: {
-      text: "Taro who is your best friend rolls her eyes at you and blows a stray strand of hair out of her face. 'You know, you're not a child anymo-' she tries to say and is quickly cut off by your other friend, Yuuji placing a palm over her mouth. <br> 'Of course we'll come with you, Maeko!' He practically shouts, but somehow manages to still maintain the dopey tone that is the most prominent quirk of his voice.'",
+      text: "Taro who is your best friend rolls her eyes at you and blows a stray strand of hair out of her face. 'You know, you're not a child anymo-' she tries to say and is quickly cut off by your other friend, Yuuji placing a palm over her mouth. 'Of course we'll come with you, Maeko!' He practically shouts, but somehow manages to still maintain the dopey tone that is the most prominent quirk of his voice.'",
+      
+    //option1
+    buttons: [{
+    option: "Thank your friends",
+    optionid: "thankfriends"
+  },
+    //option2
+    {
+    option: "Give Taro a big hug, thanking the wrong person",
+    optionid: "tarohug"
+  }]
+  
+  },
+  
+  
+    //You went alone
+    alone: {
+      text: "im too tired to write this rn tbh",
       
     //option1
     buttons: [{
@@ -38,7 +56,10 @@ var nar = {
   
   }
   
-}
+  
+  
+  
+} //end of optionstuff
 
 
 //clear an element
@@ -61,7 +82,7 @@ function ObjectLength( object ) {
 
 //where are we at
 var varid = "";
-
+var classn = "";
 
 
 
@@ -70,25 +91,41 @@ function start(startpoint){
   var starter = nar.point1.text;
   document.getElementById("storytext").innerHTML = starter;
   
-  
   //how many buttons shall we make!
   var buttonlength = ObjectLength(nar.point1.buttons);
-  clearthis(buttons); //also clear thems buttonsy buttons
-  
+
   //creating the buttons
   for (x = 0; x < buttonlength; x++){
-    currentid= "opt"+(x+1);
-      document.getElementById("buttons").innerHTML += "<button id= " + currentid +" onclick = optionclick(" + currentid + ")" + ">" + "Option: " + nar.point1.buttons[x].option + "</button>"  
+    var currentid= String('opt'+(x+1));
+    var currentclass = String(nar.point1.buttons[x].optionid);
+    var currentclassq = String("." + nar.point1.buttons[x].optionid);
+    
+    //change text of button
+    document.getElementById(currentid).innerHTML = nar.point1.buttons[x].option;
+    
+    //change class of button
+        document.getElementById(currentid).className = currentclass;
+    
+    //onclick
+    
+    //if u click ask friends
+    if (document.getElementById(currentid).className == "askfriends"){
+      document.getElementById(currentid).onclick = function(){
+        document.getElementById("storytext").innerHTML = nar.askfriends.text;
+      }
+    }//emd of ask friends start
+    else if (document.getElementById(currentid).className == "alone"){
+        document.getElementById(currentid).onclick = function(){
+        document.getElementById("storytext").innerHTML = nar.alone.text;
+        }
+      };
+
+      
+      
+
 } //end of button creation
- 
 console.log("Starting Button HTML ----> " + document.getElementById("buttons").innerHTML);
-  
-  return varid;
-}
- //end of starter function
+//end of starter function
+} //end of starter function
 
 
-//clicking on new buttons
-function optionclick(optid){
-  document.getElementById("buttons").innerHTML = "OPTIONCLIICKK";
-}
