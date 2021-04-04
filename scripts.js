@@ -41,13 +41,50 @@ var nar = {
 }
 
 
+//clear an element
+  function clearthis(elementID)
+{
+  var x = "'" + elementID + "'";
+  document.getElementById("buttons").innerHTML = "";
+}
+
+//function from https://stackoverflow.com/questions/16976904/javascript-counting-number-of-objects-in-object/16976927 <-- gets number of objects an an object
+function ObjectLength( object ) {
+    var length = 0;
+    for( var key in object ) {
+        if( object.hasOwnProperty(key) ) {
+            ++length;
+        }
+    }
+    return length;
+};
+
+//where are we at
 var varid = "";
 
-//letucce start
+
+
+
+//letucce start the start function!
 function start(startpoint){
   var starter = nar.point1.text;
   document.getElementById("storytext").innerHTML = starter;
   
+  
+  //how many buttons shall we make!
+  var buttonlength = ObjectLength(nar.point1.buttons);
+  clearthis(buttons); //also clear thems buttonsy buttons
+  
+  //creating the buttons
+  for (x = 0; x < buttonlength; x++){
+      document.getElementById("buttons").innerHTML += "<button>" + "Option: " + nar.point1.buttons + "</button>"
+    
+    
+    
+  }
+  //end of starter function
+  
+
   
   return varid;
 }
