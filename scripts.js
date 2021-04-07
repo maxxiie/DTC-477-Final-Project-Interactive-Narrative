@@ -15,7 +15,7 @@ function buttonempty() {
 
 
 
-
+//toggle start button
 function start(){
   
   
@@ -124,6 +124,21 @@ function start(){
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
    
+                     ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
+   
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
   
@@ -195,6 +210,21 @@ function start(){
   
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
+   
+                        ///START OF pickup2
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
    
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
@@ -279,6 +309,21 @@ function start(){
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
    
+    ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
+   
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
   
@@ -350,6 +395,21 @@ function start(){
   
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
+   
+    ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
    
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
@@ -473,6 +533,21 @@ function start(){
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
    
+    ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
+   
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
   
@@ -557,6 +632,21 @@ function start(){
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
    
+    ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
+   
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
   
@@ -634,6 +724,21 @@ function start(){
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
    
+    ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
+   
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
   
@@ -704,6 +809,21 @@ function start(){
   
   document.querySelector("#opt1").innerHTML = "Leave to go pick them up";
   document.querySelector("#opt2").innerHTML = "On second thought... Maybe you should call them instead?";
+   
+    ///START OF pickup2 WORKING ON THIS RN
+ document.querySelector(".pickup2").onclick = function pickup2(){
+  
+      buttonempty();
+     document.getElementById("storytext").innerHTML = "You decide to go pick them up, so you drive on over to Taro's house first. Taro looks visibly annoyed, but knows that once you're here, you're going to bug her till she leaves, so she makes you wait a moment as she hastily throws the rest of her bag together and bedgrudgingly agrees to come with you. You're clueless to her annoyance. Yuuji, on the other hand, doesn't seem to mind you too much, and he's already got a backpack ready. All good now! You head into your car."; 
+
+  //button options
+  document.querySelector("#opt1").className = "remember";
+  document.querySelector("#opt2").className = "cont1";
+  
+  document.querySelector("#opt1").innerHTML = "Remember you forgot something at home";
+  document.querySelector("#opt2").innerHTML = "Begin your trip to your destination";
+
+ } ///END OF pickup2
    
                   ///START OF call
  document.querySelector(".call").onclick = function call(){
